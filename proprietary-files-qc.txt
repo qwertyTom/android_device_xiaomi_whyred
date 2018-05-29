@@ -4,7 +4,9 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/bin/power_off_alarm
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 -vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar
+vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib/vendor.qti.hardware.alarm@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # ANT+
@@ -108,13 +110,11 @@ vendor/bin/wcnss_filter
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
 vendor/lib/libbtnv.so
-vendor/lib/libbt-hidlclient.so
 vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
 vendor/lib64/libbtnv.so
-vendor/lib64/libbt-hidlclient.so
 
 # Camera
 vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
@@ -147,6 +147,7 @@ vendor/lib/hw/camera.sdm660.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 
+vendor/bin/mm-qcamera-app
 lib/libmmcamera_faceproc.so
 lib/libmmcamera_faceproc2.so
 lib/libcamera2ndk.so
@@ -1278,6 +1279,12 @@ vendor/lib/libOmxVenc.so
 vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
+
+vendor/bin/mm-qjpeg-dec-test
+vendor/bin/mm-qjpeg-enc-test
+vendor/bin/mm-qomx-idec-test
+vendor/bin/mm-qomx-ienc-test
+vendor/bin/mm-vidc-omx-test
 
 # Misc
 bin/seempd
