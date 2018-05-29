@@ -45,6 +45,7 @@ media.stagefright.enable-scan=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 #codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD
 mm.enable.qcom_parser=13631471
 persist.mm.enable.prefetch=true
@@ -89,6 +90,7 @@ ro.qcom.ad.sensortype=2
 # System props for telephony
 # System prop to turn on CdmaLTEPhone always
 telephony.lteOnCdmaDevice=1
+persist.dbg.vt_avail_ovr=1
 
 #Simulate sdcard on /data/media
 #
@@ -168,8 +170,6 @@ ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
 #Motion Detector
 ro.vendor.sensors.mot_detect=true
-#Pick-up gesture
-ro.vendor.sensors.pug=true
 
 #Expose aux camera for below packages
 camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi
@@ -183,9 +183,6 @@ persist.camera.hist.high=20
 persist.camera.hist.drc=1.2
 persist.camera.linkpreview=0
 persist.camera.isp.turbo=1
-
-#EIS
-persist.camera.eis.enable=1
 
 #exif info for camera
 persist.sys.exif.make=Xiaomi
@@ -243,7 +240,6 @@ sys.tianma_nt36672_length=45
 
 #system property determining camera to be used for a Video call
 persist.vendor.qti.telephony.vt_cam_interface=1
-persist.dbg.vt_avail_ovr=1
 
 # enable new autobrightness algo
 sys.autobrightness_optimize=true
@@ -253,16 +249,3 @@ persist.vendor.radio.snapshot_timer=5
 
 #enable all system restart_level to relative
 persist.sys.ssr.restart_level=ALL_ENABLE
-qemu.hw.mainkeys=0
-
-#low audio flinger standby delay to reduce power consumption
-ro.audio.flinger_standbytime_ms=300
-
-#Enable camera HAL3
-persist.camera.HAL3.enabled=1
-
-# HAL1 whitelist
-#Add apps which broke after enabling HAL3.
-camera.hal1.packagelist=com.whatsapp
-camera.hal1.packagelist=com.snapchat.android
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
