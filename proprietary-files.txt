@@ -13,7 +13,19 @@ vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
 
 # ADSP modules
+lib/rfsa/adsp/libapps_mem_heap.so
+lib/rfsa/adsp/libdspCV_skel.so
+lib/rfsa/adsp/libfastcvadsp.so
+lib/rfsa/adsp/libfastcvadsp_skel.so
+lib/rfsa/adsp/libhvxMathVIO.so
+lib/rfsa/adsp/libqvr_adsp_driver_skel.so
+lib/rfsa/adsp/libscveBlobDescriptor_skel.so
+lib/rfsa/adsp/libscveFaceLandmark_skel.so
+lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/dirac_resource.dar
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so
 vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
 vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
@@ -21,11 +33,8 @@ vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdirac-capiv2.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libexternal_dog_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 vendor/lib/rfsa/adsp/libhvxMathVIO.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveFaceLandmark_skel.so
@@ -105,17 +114,7 @@ vendor/firmware/a530v2_seq.fw2
 vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 vendor/firmware/a540_gpmu.fw2
-vendor/firmware/cpp_firmware_v1_10_0.fw
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_12_0.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_5_1.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_8_0.fw
+
 vendor/firmware/dbmd4_va_fw.bin
 vendor/firmware/fpctzappfingerprint.b00
 vendor/firmware/fpctzappfingerprint.b01
@@ -131,6 +130,19 @@ vendor/firmware/leia_pm4_470.fw
 vendor/firmware/tas2557_uCDSP.bin
 vendor/firmware/tfa98xx.cnt
 vendor/firmware/voice_amodel.bin
+
+# Camera Firmware
+vendor/firmware/cpp_firmware_v1_10_0.fw
+vendor/firmware/cpp_firmware_v1_1_1.fw
+vendor/firmware/cpp_firmware_v1_12_0.fw
+vendor/firmware/cpp_firmware_v1_1_6.fw
+vendor/firmware/cpp_firmware_v1_2_0.fw
+vendor/firmware/cpp_firmware_v1_4_0.fw
+vendor/firmware/cpp_firmware_v1_5_0.fw
+vendor/firmware/cpp_firmware_v1_5_1.fw
+vendor/firmware/cpp_firmware_v1_5_2.fw
+vendor/firmware/cpp_firmware_v1_6_0.fw
+vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # diag.cfg
 vendor/Diag.cfg
@@ -241,7 +253,6 @@ vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/fstman.ini
 vendor/etc/wifi/wifi_concurrency_cfg.txt
 vendor/etc/wifi/wpa_supplicant_overlay.conf
-vendor/etc/qdcm_calib_data_huaxing_nt36672_fhd_video_mode_dsi_panel.xml
 
 # Missing bin
 vendor/bin/DR_AP_Service
@@ -351,11 +362,7 @@ lib/liblistensoundmodel2.so
 lib/liblogwrap.so
 lib/libmdsprpc.so
 lib/libminui.so
-lib/libmmcamera_faceproc.so
-lib/libmmcamera_faceproc2.so
-lib/libmorpho_memory_allocator.so
-lib/libmorpho_panorama.so
-lib/libmorpho_panorama_gp.so
+
 lib/libmp3lame.so
 lib/libnvinterface.so
 lib/liboctvm.so
@@ -388,7 +395,6 @@ lib/libscveObjectTracker_stub.so
 lib/libscvePanorama.so
 lib/libscvePanorama_lite.so
 lib/libsd_sdk_display.so
-lib/libsdk_patcher.so
 lib/libsdm-disp-apis.so
 lib/libsdsprpc.so
 lib/libsechook.so
@@ -445,20 +451,16 @@ vendor/lib/libFidoCrypto_vendor.so
 vendor/lib/libFlacSwDec.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libLctDiagSendDataApi.so
-vendor/lib/libMiWatermark.so
+
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/libUBWC.so
 vendor/lib/libUserAgent.so
-vendor/lib/libXMFD_AgeGender.so
+
 vendor/lib/lib_drplugin_server.so
-vendor/lib/lib_lowlight.so
+
 vendor/lib/lib_remote_simlock.so
 vendor/lib/libacdbmapper.so
-vendor/lib/libarcsoft_beauty_shot.so
-vendor/lib/libarcsoft_beautyshot.so
-vendor/lib/libarcsoft_beautyshot_exin.so
-vendor/lib/libarcsoft_dualcam_refocus.so
-vendor/lib/libarcsoft_high_dynamic_range.so
+
 vendor/lib/libbase64.so
 vendor/lib/libbt-hidlclient.so
 vendor/lib/libbthost_if.so
@@ -560,11 +562,9 @@ vendor/lib/libvqzip.so
 # Missing lib64
 #lib64/egl/libGLES_android.so
 lib64/fm_helium.so
-lib64/libCameraEffectJNI.so
-lib64/libFaceDetectCA.so
+
 lib64/libFidoCryptoJNI.so
 lib64/libFidoCrypto_system.so
-lib64/libImageSearchAPI.so
 lib64/libMegviiUnlock-jni-1.2.so
 lib64/libMegviiUnlock.so
 lib64/libOmxMux.so
@@ -584,7 +584,6 @@ lib64/libadvanced_crypto.so
 lib64/libadvanced_crypto_jni.so
 lib64/libairtunes.so
 lib64/libairtunes_jni.so
-lib64/libams-1.2.9-mfr.so
 lib64/libantradio.so
 lib64/libavast-utils.so
 lib64/libavast-vps-interface.so
@@ -634,8 +633,7 @@ lib64/libfastcvadsp_stub.so
 lib64/libfastcvopt.so
 lib64/libfdpp.so
 lib64/libfdpp_jni.so
-lib64/libfiltergenerator.so
-lib64/libfilterpack_facedetect.so
+
 lib64/libfm-hci.so
 lib64/libfmp_snpe_cv.so
 lib64/libgnustl_shared.so
@@ -660,8 +658,6 @@ lib64/libjni_trackingfocus.so
 lib64/libjni_trueportrait.so
 lib64/libjni_truescanner_v2.so
 lib64/libjni_ubifocus.so
-lib64/libkcmutil.so
-lib64/libkcmutilex.so
 lib64/libklobugreport_jni.so
 lib64/liblistenjni.so
 lib64/liblistensoundmodel2.so
@@ -669,11 +665,7 @@ lib64/libmdsprpc.so
 lib64/libmediaplayerservice.so
 lib64/libmegbucket.so
 lib64/libminui.so
-lib64/libmmcamera_faceproc.so
-lib64/libmmcamera_faceproc2.so
-lib64/libmorpho_memory_allocator.so
-lib64/libmorpho_panorama.so
-lib64/libmorpho_panorama_gp.so
+
 lib64/libmp3lame.so
 lib64/libmtk_serialnum.so
 lib64/libnexcralbody_mc_jb.so
@@ -719,7 +711,6 @@ lib64/libseestraight.so
 lib64/libshell.so
 lib64/libshell_jni.so
 lib64/libshellservice.so
-lib64/libsic_helper.so
 lib64/libsim-activate-root-checker.so
 lib64/libskbcli.so
 lib64/libsnpe_loader.so
